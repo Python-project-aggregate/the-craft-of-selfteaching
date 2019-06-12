@@ -16,9 +16,9 @@
 
 第一部分反复读过之后，最重要的结果就是：
 
-> 现在你有能力自己查询官方文档了…… 
+> 现在你有能力自己查询官方文档了……
 
-起码，在此之后，再去阅读 [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)，不那么费力了，最起码，可以靠自己理解绝大多数内容…… 
+起码，在此之后，再去阅读 [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)，不那么费力了，最起码，可以靠自己理解绝大多数内容……
 
 在继续阅读本书内容的同时，有空就要反复翻 The Python Tutorial。
 
@@ -39,7 +39,7 @@ Python 的官方文档网址是：
 
 此人很帅，但更帅的是他的车牌（摘自 Guido van Rossume 的[个人主页](https://gvanrossum.github.io)）：
 
-![](https://gvanrossum.github.io/images/license.jpg)
+![](https://gvanrossum.github.io/images/license.jpg?raw=true)
 
 ## 为什么一定要阅读官方文档
 
@@ -49,7 +49,7 @@ Python 的官方文档网址是：
 
 比如，在当前这本书里，不会涉及 [Bytes Object](https://docs.python.org/3/library/stdtypes.html#bytes-objects) —— 并非只有我一个人这么做，著名的 Python 教程《[Think Python: How to Think Like a Computer Scientist](http://greenteapress.com/thinkpython2/html/index.html)》、《[Dive into Python](https://linux.die.net/diveintopython/html/toc/index.html)》等等都没有涉及 Bytes Object 这个话题。
 
-由于官方文档实际上没办法对入门者、初学者过分友好 —— 毕竟，全面、权威、准确才是它更应该做到的事情 —— 所以，很多人在刚开始的时候求助于各类非官方的教材、教程。原本应该是入门以后就理应 “只读官方文档”，或者 “第一查询对象只能是官方文档”，但在很多人那里竟然变成了 “从一开始到最后都在回避官方文档（或者说 ‘最专业的说明文字’），这就不好了，真的很吃亏，且自己都无法知道自己究竟吃了多少亏 —— 总以为自己已经学完了，但实际上从一开始就一点都不全面。
+由于官方文档实际上没办法对入门者、初学者过分友好 —— 毕竟，全面、权威、准确才是它更应该做到的事情 —— 所以，很多人在刚开始的时候求助于各类非官方的教材、教程。原本应该是入门以后就理应 “只读官方文档”，或者 “第一查询对象只能是官方文档”，但在很多人那里竟然变成了 “从一开始到最后都在回避官方文档（或者说 ‘最专业的说明文字’）”，这就不好了，真的很吃亏，且自己都无法知道自己究竟吃了多少亏 —— 总以为自己已经学完了，但实际上从一开始就一点都不全面。
 
 请牢记且遵守这个原则：
 
@@ -69,13 +69,13 @@ Python 的官方文档网址是：
 
 把 The Python Tutorial 拉回本地阅读，可能更为方便，尤其是可以用 Sphinx 重新制作之后，页面左侧可以总是显示完整的目录：
 
-![](../images/local-tutorial.png)
+![](https://raw.githubusercontent.com/selfteaching/the-craft-of-selfteaching/master/images/local-tutorial.png?raw=true)
 
-也可以把这个教程转换成 epub 格式，以便在移动设备上阅读；甚至可以把这些个页面的 `.rst` 源文件转换成 `.ipynb` 文件，以便用 Jupyter Lab 浏览时可以直接执行其中的代码…… 
+也可以把这个教程转换成 epub 格式，以便在移动设备上阅读；甚至可以把这些个页面的 `.rst` 源文件转换成 `.ipynb` 文件，以便用 Jupyter Lab 浏览时可以直接执行其中的代码……
 
 **注意**
 
-> 此页的 Code Cell 中都是可执行的 bash 命令…… 
+> 此页的 Code Cell 中都是可执行的 bash 命令……
 
 在此页执行它们对你来说是没意义的 —— 因为它们的执行结果在服务器上；这其中的命令，应该在你本地计算机上的 Terminal 中执行，你才能在本地计算机上获取结果。
 
@@ -105,7 +105,7 @@ repo 地址是：
 ```bash
 %%bash
 cd ~/Downloads
-# 总计 241M，所以需要一点时间
+# 总计 175M（文件大小随版本变动），所以需要一点时间
 git clone https://github.com/python/cpython.git
 cd cpython/Doc/tutorial
 ls
@@ -118,7 +118,7 @@ ls
 # rst2ipynb needs pandoc and notedown...
 which pandoc
 which notedown
-# 没有这两样东西的话，需要执行下面两行进行安装…… 
+# 没有这两样东西的话，需要执行下面两行进行安装……
 # conda install -c conda-forge pandoc
 # conda install -c conda-forge notedown
 
@@ -164,7 +164,7 @@ function rsti {
 source ~/.bash_profile
 ```
 
-而后，在有 `.rst` 文件的目录下输入 `rsti` 执行即可…… 
+而后，在有 `.rst` 文件的目录下输入 `rsti` 执行即可……
 
 ### 用 Sphinx 生成 html/epub 版本
 
@@ -216,7 +216,7 @@ make epub
 
 用 Sphinx 这样生成的版本，支持本地目录内搜索，也确实比在网站上看更方便一点：
 
-![](../images/search-generated-by-sphinx.png)
+![](https://raw.githubusercontent.com/selfteaching/the-craft-of-selfteaching/master/images/search-generated-by-sphinx.png?raw=true)
 
 ### 下载已经转换好的版本
 
@@ -234,7 +234,7 @@ git clone https://github.com/xiaolai/the-python-tutorial-in-other-formats.git
 
 > `cpython/Doc/Makefile`
 
-只不过，将所有文件编译到一个 epub 里，在 iPad 之类的移动设备上打开有点费劲 —— 在我的设备上显示有 7701 页，翻页都要顿一顿…… 
+只不过，将所有文件编译到一个 epub 里，在 iPad 之类的移动设备上打开有点费劲 —— 在我的设备上显示有 7701 页，翻页都要顿一顿……
 
 想要使用这个官方的 `Makefile` 的话，首先确认自己已经安装过 Sphinx，其次需要补充安装一个包：
 
